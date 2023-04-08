@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-35deg, rgba(0, 255, 34, 0.907), rgba(0, 0, 255, 0.671));
+}
+
+main {
+    position: relative;
+    margin: 1rem;
+}
+
+.cameraFrame {
+    border-radius: .3rem;
+    border: 1px red solid;
+    background-color: rgba(255, 0, 0, 0.148);
+    height: 8rem;
+    width: 100%;
+
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0.7rem;
+}
+
+.toolsButton {
+    padding: .4rem .8rem;
+}
+
+.dataSection {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    color: aliceblue;
+    font-size: large;
+    font-weight: 700;
+}
+
+.scanCount {
+    color: inherit;
+    background-color: rgb(160, 24, 228);
+    padding: .6rem 1rem;
+    border-radius: .4rem;
+}
+
+.scannedData {
+    display: grid;
+    height: 22rem;
+    gap: .4rem;
+    margin-top: .5rem;
+    overflow: auto;
+    counter-reset: id;
+    color: inherit;
+}
+
+.scannedData div {
+    margin: 0 2rem
+}
+
+.scannedData div::before {
+    counter-increment: id;
+    content: counter(id) ".  ";
+}
+
+.camera {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
