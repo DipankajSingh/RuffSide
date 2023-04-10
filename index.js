@@ -30,6 +30,7 @@ const constraints = {
 scanControl.addEventListener("click", () => {
     scanner.start({ facingMode: "environment" }, config, (text, result) => {
         console.log(text, result)
+        alert(result)
     });
     scanCountElm.innerHTML = navigator.mediaDevices
 
