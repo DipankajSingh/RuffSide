@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="html5-qrcode.min.js"></script>
-    <script defer src="index.js"></script>
-    <title>Document</title>
+    <script defer src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script defer type="module" src="index.js"></script>
+    <title>Scan It</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <main>
         <div class="captureArea">
             <div class="cameraFrame">
-                <video class="camera" autoplay></video>
+                <video class="camera" id="scanner" autoplay></video>
             </div>
             <div class="tools">
                 <button class="toolsButton scanControl">Start Scan</button>
