@@ -1,9 +1,9 @@
 const data = []
 
 function onScanSuccess(decodedText, decodedResult) {
-    document.getElementsByTagName('p')[0].innerText += decodedResult
-    if (data.includes(decodedResult)) return
-    data.push(decodedResult)
+    document.getElementsByTagName('p')[0].innerText += decodedText
+    if (data.includes(decodedText)) return
+    data.push(decodedText)
 }
 var html5QrcodeScanner = new Html5QrcodeScanner(
     "qr-reader", { fps: 10, qrbox: 250 });
