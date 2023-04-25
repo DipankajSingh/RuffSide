@@ -5,72 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
-    <script defer type="module" src="index.js"></script>
-    <title>Scan It</title>
+    <title>QrScanner</title>
+
+    <script defer src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+    <script defer src="./index.js"></script>
 </head>
 
 <body>
-
-    <main>
-        <div class="captureArea">
-            <div class="cameraFrame">
-                <video class="camera" id="scanner" autoplay></video>
-            </div>
-            <div class="tools">
-                <button class="toolsButton scanControl">Start Scan</button>
-                <button class="toolsButton downloadButton">Save File </button>
-            </div>
-        </div>
-        <div class="dataSection">
-            <div class="scanCount">535 scanned</div>
-            <div class="scannedData">
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-                <div>435464354684546</div>
-
-            </div>
-        </div>
-    </main>
-
-
+    <div id="qr-reader" style="width: 600px"></div>
+    <p></p>
 </body>
 
 </html>
