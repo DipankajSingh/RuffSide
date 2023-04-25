@@ -1,7 +1,7 @@
 const data = []
 
 function onScanSuccess(decodedText, decodedResult) {
-    document.getElementsByTagName('p')[0].innerText += decodedResult + "  " + decodedText
+    document.getElementsByTagName('p')[0].innerText += decodedResult
     if (data.includes(decodedResult)) return
     data.push(decodedResult)
 }
